@@ -4,19 +4,7 @@ import java.util.Scanner;
 public class Main {
 
 
-
-     /*bubbleSort(int[] arr) {
-        for (int i = arr.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int t = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = t;
-                }
-            }
-        }
-    }*/
-    public static void main( String [] args) {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите размер массива: ");
         int size = input.nextInt();
@@ -30,7 +18,6 @@ public class Main {
             System.out.print(" " + num[i]);
         }
         System.out.println();
-
 
 
         //Поиск максимального значения из массива
@@ -52,14 +39,27 @@ public class Main {
 
         //Поиск количества повторений числа 5
         int j = 0;
-        for(int i=0; i<size; i++) {
-            if (num[i]== 5){
+        for (int i = 0; i < size; i++) {
+            if (num[i] == 5) {
                 j++;
             }
         }
         System.out.println("Количество повторений числа 5: " + j);
 
 
+        for (int i = num.length - 1; i > 0; i--) {
+            for (int n = 0; n < i; n++) {
+                if (num[n] > num[n + 1]) {
+                    int t = num[n];
+                    num[n] = num[n + 1];
+                    num[n + 1] = t;
+                }
+            }
+        }
+        System.out.println("Отсортированный массив: ");
+        for(int i = 0; i< num.length; i++){
+            System.out.print(num[i]);
+        }
 
     }
 }
