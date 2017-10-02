@@ -102,8 +102,16 @@ public class Mod4 {
             case 2:
                 drawRectangle();
                 break;
-            case 3:
-                drawRectangle(6);
+                case 3:
+                    drawRectangle(6);
+                    System.out.println("Хотите ли вы выполнить еще одну операцию?");
+                    System.out.println("Введите 1 для <да> или 0 для <нет>");
+                    int ok = input.nextInt();
+                    if (ok == 1) {
+                        i = 1;
+                        break;
+                    } else {
+                        i = 0;
                 break;
             case 4:
                 getMax();
@@ -116,5 +124,8 @@ public class Mod4 {
         }
 
     }
+        }while(i == 1);
+    }
+
 
 }
