@@ -1,7 +1,9 @@
-package MP3_Players;
+package MP3_Players.Simple_Players;
+
+import MP3_Players.Advanced_Players.MP3Player;
 
 public class Player2 extends MP3Player {
-    Player2(double price) {
+    public Player2(double price) {
         super(price);
     }
 

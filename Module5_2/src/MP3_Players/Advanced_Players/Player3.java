@@ -1,4 +1,4 @@
-package MP3_Players;
+package MP3_Players.Advanced_Players;
 
 public class Player3 extends MP3Player {
     public Player3(double price) {

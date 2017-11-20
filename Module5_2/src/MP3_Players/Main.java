@@ -1,5 +1,12 @@
 package MP3_Players;
 
+import MP3_Players.Advanced_Players.Player3;
+import MP3_Players.Advanced_Players.Player4;
+import MP3_Players.Advanced_Players.Player5;
+import MP3_Players.Advanced_Players.Player6;
+import MP3_Players.Simple_Players.Player1;
+import MP3_Players.Simple_Players.Player2;
+
 public class Main {
     public static void main(String[] args) {
         Player1 Player1 = new Player1(30);

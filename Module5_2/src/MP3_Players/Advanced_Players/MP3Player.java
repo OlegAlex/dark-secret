@@ -1,8 +1,8 @@
-package MP3_Players;
+package MP3_Players.Advanced_Players;
 
 public abstract class MP3Player {
     String song = "The Best Song";
-    private final double price;
+    public final double price;
     String[] playlist = new String[]{"The Best Song", "The Good Song", "The Super Song"};
 
     public MP3Player(double price) {
